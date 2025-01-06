@@ -2,7 +2,7 @@ import { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./Header";
 import Body from "./Body";
-import useeffect from "./UseEffect";
+import useeffect from "./Components/UseEffect";
 import "./Styles/Main.scss";
 import "./App.css";
 
@@ -14,7 +14,6 @@ function App() {
         <Route patch="/" element={<Body/>}></Route>
       </Routes>
     </Router>
-
 
       {Header()}
 
