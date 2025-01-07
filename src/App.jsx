@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import Header from "./Header";
-import Body from "./Body";
+import Header from "./Components/Header";
+import Body from "./Components/Body";
 import "./Styles/Main.scss";
 import "./App.css";
 import StudentsPage from "./Components/Props";
