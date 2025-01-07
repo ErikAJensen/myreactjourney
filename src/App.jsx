@@ -1,20 +1,27 @@
-import { useState } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Header from "./Header";
 import Body from "./Body";
-import useeffect from "./Components/UseEffect";
 import "./Styles/Main.scss";
 import "./App.css";
+import StudentsPage from "./Components/Props";
 
 function App() {
   return (
-    <>
-      {Header()}
+    <Router>
+      <div>
+        {Header()}
 
-      {useeffect()}
+        <button>
+          <Link to="/students">Info</Link>
+        </button>
 
-      {Body()}
-    </>
+        <Routes>
+          <Route path="/students" element={<StudentsPage />} />
+        </Routes>
+
+        {Body()}
+      </div>
+    </Router>
   );
 }
 
