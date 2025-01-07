@@ -12,7 +12,7 @@ function App() {
         {Header()}
 
         <button>
-          <Link to="/students">Info</Link>
+          <Link to="/students">Props</Link>
         </button>
 
         <Routes>
