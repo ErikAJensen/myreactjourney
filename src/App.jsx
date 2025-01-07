@@ -7,14 +7,8 @@ import "./Styles/Main.scss";
 import "./App.css";
 
 function App() {
-  return (   
+  return (
     <>
-    <Router>
-      <Routes>
-        <Route patch="/" element={<Body/>}></Route>
-      </Routes>
-    </Router>
-
       {Header()}
 
       {useeffect()}
