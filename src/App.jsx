@@ -12,6 +12,8 @@ function App() {
         <Header />
 
         <div>
+          <h1>Props</h1>
+
           <h1>Students</h1>
           <Student name="Erik" lastname="Aas" age={25} isStudent="Yes" />
           <Student name="Bjørn" lastname="Jensen" age={40} isStudent="No" />
