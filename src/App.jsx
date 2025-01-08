@@ -3,7 +3,7 @@ import Header from "./Components/Header";
 import Body from "./Components/Body";
 import "./Styles/Main.scss";
 import "./App.css";
-import { Student, Teachers } from "./Components/Props";
+import { Student, Teachers, Cars } from "./Components/Props";
 
 function App() {
   return (
@@ -22,6 +22,9 @@ function App() {
           <h1>Teacher</h1>
           <Teachers name="Bernt" age={40} />
           <Teachers name="Nathalie" age={25} isStudentPas="Yes" />
+
+          <h1>Cars</h1>
+          <Cars type="Ford" year={2012} fuel="Diesel" />
         </div>
 
         <Body />

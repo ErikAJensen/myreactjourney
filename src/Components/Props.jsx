@@ -23,5 +23,15 @@ function Teachers(props) {
   );
 }
 
+function Cars(props) {
+  return (
+    <div className="Car-card">
+      <p>Type: {props.type} </p>
+      <p>Year: {props.year} </p>
+      <p>fuel: {props.fuel} </p>
+    </div>
+  );
+}
+
 // Eksporter komponentene som named exports
-export { Student, Teachers };
+export { Student, Teachers, Cars };
