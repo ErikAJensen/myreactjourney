@@ -3,23 +3,26 @@ import Header from "./Components/Header";
 import Body from "./Components/Body";
 import "./Styles/Main.scss";
 import "./App.css";
-import StudentsPage from "./Components/Props";
+import { Student, Teachers } from "./Components/Props";
 
 function App() {
   return (
     <Router>
       <div>
-        {Header()}
+        <Header />
 
-        <button>
-          <Link to="/students">Props</Link>
-        </button>
+        <div>
+          <h1>Students</h1>
+          <Student name="Erik" lastname="Aas" age={25} isStudent="Yes" />
+          <Student name="Bjørn" lastname="Jensen" age={40} isStudent="No" />
+          <Student name="Paul" age={30} isStudent="No" />
 
-        <Routes>
-          <Route path="/students" element={<StudentsPage />} />
-        </Routes>
+          <h1>Teacher</h1>
+          <Teachers name="Bernt" age={40} />
+          <Teachers name="Nathalie" age={25} isStudentPas="Yes" />
+        </div>
 
-        {Body()}
+        <Body />
       </div>
     </Router>
   );

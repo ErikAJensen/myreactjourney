@@ -1,24 +1,27 @@
 import React from "react";
 
+// Trener på å kode props
 function Student(props) {
   return (
     <div className="student-card">
       <p>Name: {props.name}</p>
-      <p>Last Name: {props.lastname} </p>
+      <p>Last Name: {props.lastname}</p>
       <p>Age: {props.age}</p>
       <p>Student: {props.isStudent ? "Yes" : "No"}</p>
     </div>
   );
 }
 
-function StudentsPage() {
+//Props for
+function Teachers(props) {
   return (
-    <div>
-      <h1>Students</h1>
-      <Student name="Erik" lastname="Aas" age={25} isStudent="Yes" />
-      <Student name="Bjørn" lastname="Jensen" age={40} isStudent="No" />
+    <div className="teachers-card">
+      <p>Name: {props.name}</p>
+      <p>Age {props.age} </p>
+      <p>Pass Exsams {props.isStudentPas ? "Yes" : "No"} </p>
     </div>
   );
 }
 
-export default StudentsPage;
+// Eksporter komponentene som named exports
+export { Student, Teachers };
