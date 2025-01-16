@@ -1,6 +1,6 @@
 import React from "react";
 
-// Trener på å kode props
+//øver på props
 function Student(props) {
   return (
     <div className="student-card">
@@ -12,7 +12,7 @@ function Student(props) {
   );
 }
 
-//Props for
+//øver på props
 function Teachers(props) {
   return (
     <div className="teachers-card">
@@ -23,12 +23,14 @@ function Teachers(props) {
   );
 }
 
+//øver på props
 function Cars(props) {
   return (
     <div className="Car-card">
       <p>Type: {props.type} </p>
       <p>Year: {props.year} </p>
       <p>fuel: {props.fuel} </p>
+      <p>Number plates: {props.Numberplates}</p>
     </div>
   );
 }

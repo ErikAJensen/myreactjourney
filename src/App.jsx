@@ -26,7 +26,9 @@ function App() {
           <Teachers name="Nathalie" age={25} isStudentPas="Yes" />
 
           <h1>Cars</h1>
-          <Cars type="Ford" year={2012} fuel="Diesel" />
+          <Cars type="Ford" year={2012} fuel="Diesel" Numberplates="5-12097D" />
+
+          <Cars type="BWM" year={2017} fuel="EL" Numberplates="FRQ 831" />
         </div>
 
         <Body />
