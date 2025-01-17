@@ -27,6 +27,11 @@ function Teachers(props) {
 function Cars(props) {
   return (
     <div className="Car-card">
+      <img
+        src=" {images2123456.jpg} "
+        alt="Car"
+        style={{ width: "100px", height: "auto" }}
+      />
       <p>Type: {props.type} </p>
       <p>Year: {props.year} </p>
       <p>fuel: {props.fuel} </p>
