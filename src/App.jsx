@@ -6,6 +6,7 @@ import "./App.css";
 import { Student, Teachers, Cars } from "./Components/Props";
 import CarInfo from "./Components/State";
 import React, { useState } from "react";
+import { useParams } from "react-router-dom";
 
 function App() {
   return (

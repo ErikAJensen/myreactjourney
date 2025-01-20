@@ -1,4 +1,5 @@
 import React from "react";
+import carImagebmw from "./images2123456.jpg"; // Sørg for at filstien er korrekt
 
 //øver på props
 function Student(props) {
@@ -28,7 +29,7 @@ function Cars(props) {
   return (
     <div className="Car-card">
       <img
-        src=" {images2123456.jpg} "
+        src={carImagebmw}
         alt="Car"
         style={{ width: "100px", height: "auto" }}
       />
