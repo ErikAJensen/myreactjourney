@@ -29,8 +29,6 @@ function App() {
 
           <Cars type="BWM" year={2017} fuel="EL" Numberplates="FRQ 831" />
         </div>
-
-        <Body />
       </div>
     </Router>
   );
