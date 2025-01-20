@@ -12,8 +12,6 @@ function App() {
   return (
     <Router>
       <div>
-        <Header />
-
         <div>
           <h1>Props</h1>
 
