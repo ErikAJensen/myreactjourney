@@ -1,5 +1,4 @@
 import React from "react";
-import carImagebmw from "./images2123456.jpg"; // Sørg for at filstien er korrekt
 
 //øver på props
 function Student(props) {
@@ -29,9 +28,9 @@ function Cars(props) {
   return (
     <div className="Car-card">
       <img
-        src={carImagebmw}
+        src={props.carimg}
         alt="Car"
-        style={{ width: "100px", height: "auto" }}
+        style={{ width: "100%", height: "auto" }}
       />
       <p>Type: {props.type} </p>
       <p>Year: {props.year} </p>
@@ -41,5 +40,15 @@ function Cars(props) {
   );
 }
 
+function City(props) {
+  return (
+    <div className="City-card">
+      <img src={props.Cityimg} style={{ width: "100%", height: "auto" }} />
+      <p>City {props.Cityname} </p>
+      <p>population {props.population} </p>
+    </div>
+  );
+}
+
 // Eksporter komponentene som named exports
-export { Student, Teachers, Cars };
+export { Student, Teachers, Cars, City };
