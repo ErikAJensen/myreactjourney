@@ -102,6 +102,16 @@ article {
   display: block; // Sørger for at artikkelen vises som en blokk
 }
 
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
 .click-button {
   margin-right: 1rem; // Legger til mellomrom mellom knappene
 }
