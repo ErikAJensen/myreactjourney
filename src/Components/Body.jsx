@@ -14,8 +14,6 @@ function Body() {
           Jeg skal fordele opp nettsiden i forksjellige komponenter, slik at jeg
           kan øve på forksjellige deler av React.
         </p>
-
-        <button>HandleSearch</button>
       </article>
     </body>
   );
