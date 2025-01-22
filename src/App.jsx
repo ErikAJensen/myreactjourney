@@ -7,6 +7,7 @@ import { Student, Teachers, Cars, City } from "./Components/Props";
 import CarInfo from "./Components/State";
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
+import Cliks from "./Components/Click";
 import carImagebmw from "./Img/images2123456.jpg";
 import fordimg from "./Img/ford.jpg";
 import opelimg from "./Img/opel.jpg";
@@ -76,25 +77,42 @@ function Citys() {
 function App() {
   return (
     <Router>
+      <>
+        <Link to="Body" className="link-button">
+          Henter Components
+        </Link>
+      </>
+
+      <>
+        <Link to="Cliks" className="link-button">
+          Events
+        </Link>
+      </>
       <div>
-        <div>
-          <h1>Props</h1>
-        </div>
+        <Link to="students" className="link-button">
+          Studenter
+        </Link>
 
-        <Link to="students">Studenter</Link>
+        <Link to="Cars" className="link-button">
+          Biler
+        </Link>
 
-        <Link to="Cars">Biler</Link>
+        <Link to="Teachers" className="link-button">
+          Lærer
+        </Link>
 
-        <Link to="Teachers">Lærer</Link>
-
-        <Link to="Citys">Byer</Link>
+        <Link to="Citys" className="link-button">
+          Byer
+        </Link>
       </div>
 
       <Routes>
+        <Route path="Body" element={<Body />} />
         <Route path="students" element={<StudentsPage />} />
         <Route path="Cars" element={<CarPage />} />
         <Route path="Teachers" element={<Teacher />} />
         <Route path="Citys" element={<Citys />} />
+        <Route path="Cliks" element={<Cliks />} />
       </Routes>
     </Router>
   );

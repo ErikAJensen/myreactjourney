@@ -14,11 +14,14 @@ body {
 }
 
 header {
-  background-color: #333;
-  color: white;
+  background-color: #c6d8d3;
+  color: rgb(0, 0, 0);
   padding: 1rem;
   border-radius: 8px;
   margin-bottom: 2rem;
+  position: sticky; // Gjør headeren sticky
+  top: 0; // Plasserer headeren på toppen
+  z-index: 1000; // Sørger for at headeren er over annet innhold
 }
 
 .student-card {
@@ -45,6 +48,23 @@ header {
   display: inline-block;
 }
 
+.link-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0.5rem; // Legger til mellomrom mellom knappene
+  text-decoration: none; // Fjerner understrekning fra lenker
+  display: inline-block; // Sørger for at lenkene vises som knapper
+}
+
+.link-button:hover {
+  background-color: #0056b3;
+}
+
 .Car-card {
   background-color: #c6d8d3;
   color: #333;
@@ -56,6 +76,7 @@ header {
   width: 200px;
   display: inline-block;
 }
+
 .City-card {
   background-color: #c6d8d3;
   color: #333;
@@ -71,10 +92,14 @@ header {
 article {
   background-color: #c6d8d3;
   color: #333;
-  padding: 2rem;
-  margin: 1rem 0;
-  border-radius: 8px;
+  padding: 1rem; // Juster padding etter behov
+  border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  margin: 0.5rem auto; // Reduserer margin for å fjerne stort mellomrom
+  width: 90%; // Gjør bredden responsiv
+  max-width: 800px; // Setter en maksimal bredde
+  display: block; // Sørger for at artikkelen vises som en blokk
 }
 
 button {
