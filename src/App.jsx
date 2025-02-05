@@ -4,18 +4,13 @@ import Body from "./Components/Body";
 import "./Styles/Main.scss";
 import "./App.css";
 import React, { useState } from "react";
-import { useParams } from "react-router-dom";
 import Cliks from "./Components/Click";
 import { StudentsPage, CarPage, Teacher, Citys } from "./Components/Function";
 
 function App() {
   return (
     <Router>
-      <>
-        <Link to="Body" className="link-button">
-          Henter Components
-        </Link>
-      </>
+      <Header />
 
       <>
         <Link to="Cliks" className="link-button">
